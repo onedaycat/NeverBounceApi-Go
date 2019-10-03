@@ -1,12 +1,14 @@
 package neverbounce_test
 
 import (
-	"github.com/NeverBounce/NeverBounceApi-Go"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
+	"os"
+
+	neverbounce "github.com/onedaycat/NeverBounceApi-Go"
+	nbModels "github.com/onedaycat/NeverBounceApi-Go/models"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gopkg.in/jarcoal/httpmock.v1"
-	"os"
+
+	"github.com/jarcoal/httpmock"
 )
 
 var _ = Describe("Jobs", func() {

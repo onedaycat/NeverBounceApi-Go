@@ -6,7 +6,7 @@ We offer solutions for verifying individual emails as well as lists containing h
 For our full API documentation see: https://developers.neverbounce.com/v4.0/
 
 Basic usage:
-	import "github.com/neverbounce/neverbounceapi-go"
+	import "github.com/onedaycat/NeverBounceApi-Go"
 	client := neverbounce.New("api_key")
 
 	accountInfo, err := client.Account.Info()

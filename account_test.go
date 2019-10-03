@@ -1,10 +1,11 @@
 package neverbounce_test
 
 import (
-	"github.com/NeverBounce/NeverBounceApi-Go"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
-	"gopkg.in/jarcoal/httpmock.v1"
+
+	"github.com/jarcoal/httpmock"
+	neverbounce "github.com/onedaycat/NeverBounceApi-Go"
 )
 
 var _ = Describe("Account", func() {

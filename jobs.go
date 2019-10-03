@@ -6,7 +6,7 @@ We offer solutions for verifying individual emails as well as lists containing h
 For our full API documentation see: https://developers.neverbounce.com/v4.0/
 
 Basic usage:
-	import "github.com/neverbounce/neverbounceapi-go"
+	import "github.com/onedaycat/NeverBounceApi-Go"
 	client := neverbounce.New("api_key")
 
 	accountInfo, err := client.Account.Info()
@@ -39,9 +39,10 @@ package neverbounce
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
 	"io"
 	"os"
+
+	"github.com/onedaycat/NeverBounceApi-Go/models"
 )
 
 // Jobs endpoints provides high-speed​ validation on a list of email addresses.
@@ -209,7 +210,7 @@ func (r *Jobs) Results(model *nbModels.JobsResultsRequestModel) (*nbModels.JobsR
 
 // Download the results as a CSV to a file.
 // This is useful if your uploading the results to a CRM or are use to working with spreadsheets.
-func (r *Jobs) Download(model *nbModels.JobsDownloadRequestModel, filepath string) (error) {
+func (r *Jobs) Download(model *nbModels.JobsDownloadRequestModel, filepath string) error {
 	model.APIKey = r.apiKey
 
 	// call info API

@@ -9,8 +9,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/NeverBounce/NeverBounceApi-Go"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
+	"github.com/onedaycat/NeverBounceApi-Go"
+	"github.com/onedaycat/NeverBounceApi-Go/models"
 )
 
 func main() {

@@ -1,13 +1,15 @@
 package neverbounce_test
 
 import (
-	"github.com/NeverBounce/NeverBounceApi-Go"
-	"github.com/NeverBounce/NeverBounceApi-Go/models"
-	. "github.com/onsi/ginkgo"
-	. "github.com/onsi/gomega"
-	"gopkg.in/jarcoal/httpmock.v1"
 	"os"
 	"testing"
+
+	. "github.com/onsi/ginkgo"
+	. "github.com/onsi/gomega"
+
+	"github.com/jarcoal/httpmock"
+	neverbounce "github.com/onedaycat/NeverBounceApi-Go"
+	nbModels "github.com/onedaycat/NeverBounceApi-Go/models"
 )
 
 func TestNeverBounceApiGo(t *testing.T) {
